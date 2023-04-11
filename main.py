@@ -9,7 +9,6 @@ def main(message):
         chatLog.image_create(END, image=imageUser)
         chatLog.insert(END, "  " + message + "\n")
 
-
         # Salida
         chatLog.insert(END, "_" * 48 + "\n\n    ")
         chatLog.image_create(END, image=imageChat)
