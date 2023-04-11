@@ -1,0 +1,140 @@
+{"contenido": [
+    {
+      "tag": "saludo",
+      "patrones":  ["hola", "un saludo", "hello", "buenos días", "buenas tardes"],
+      "respuestas": ["¡Hola!, ¿cómo podemos ayudarte?",
+                              "Hola soy tu asistente virtual de UBank",
+                              "Bienvenido al soporte en línea de \n               UBank, ¿cómo te podemos ayudar?",
+                              "¡Gracias por comunicarte con UBank!\n               ¿Cómo te ayudamos?",
+                              "Buen día, te habla tu asistente virtual\n               de UBank, ¿Como te podemos ayudar?"]
+    },
+
+    {
+      "tag": "despedida",
+      "patrones":  ["Adiós","Chao", "Hasta la próxima", "Hasta luego", "Hasta pronto", "Nos vemos",
+                              "Gracias", "Chau", "Hasta la vista", "Que tenga buen día"],
+      "respuestas": ["¡Hasta la próxima!", "Hasta luego, fue un placer ayudarte!",
+                              "Espero haber ser de utilidad, nos hablamos en una próxima ocasión",
+                              "Fue un gusto ayudarte, que tengas un buen día", "Hasta pronto, UBank siempre contigo",
+                              "Gracias por utiliza nuestros soporte de UBank, chau",
+                              "Nos hablamos en una próxima ocasión", "Adiós, espero haber sido de ayuda, cuidate",
+                              "Cuidate, que tengas un lindo día"]
+    },
+
+    {
+      "tag": "opciones-principales",
+      "patrones":  ["Necesito ayuda", "Opciones", "Ayuda", "información", "inquietud"],
+      "respuestas": ["\n               Claro que sí, por favor escoge una\n               opción\n               1. Cuenta de ahorros\n               2. Cuenta corriente\n               3. Tarjeta de crédito\n               4. Préstamos"]
+    },
+
+    {
+      "tag": "cuenta-ahorros",
+      "patrones":  ["1. Cuenta de ahorros", "Opción 1", "1", "ahorros"],
+      "respuestas": ["Comprendo, nos enfocaremos en\n la cuenta de ahorros, ahora dime ¿en que te puedo ayudar?",
+                             "Por supuesto, conozcamos más sobre\n las cuentas de ahorros, dime ¿que necesitas saber?",
+                             "Oh! Cuenta de ahorros, como puedo\n ayudarte en esta categoría?"]
+    },
+
+    {
+      "tag": "cuenta-ahorros-definicion",
+      "patrones":  ["qué es una cuenta de ahorros", "que es", "no sé que es un cuenta de ahorros",
+                              "¿Para qué es una cuenta de ahorros?"],
+      "respuestas": ["Una cuenta de ahorros es un producto\n financiero ofrecido por el Banco que te permite ahorrar tu dinero de\n forma segura. Tradicionalmente, la cuenta de ahorros es el producto más usado  para que puedas ahorrar y disponer de tu dinero de forma rápida",
+                             "Una cuenta de ahorro es un producto\n financiero que genera una rentabilidad con un tipo de interés\n variable a cambio de depositar el dinero en la cuenta. Además, al mismo tiempo permite acceder a ese capital siempre que sea necesario",
+                             "Las Cuentas de Ahorro son un tipo de\n ahorro orientado quienes tienen la capacidad de juntar dinero\n en forma periódica, ya que pueden abrirse y mantenerse con bajos montos."]
+    },
+
+    {
+      "tag": "cuenta-ahorros-obtenerla",
+      "patrones":  ["¿Cómo puedo obtenerla?", "¿Cómo la puedo adquirir?", "¿Cómo la puedo sacar?",
+                              "¿Que se debe hacer para conseguirla?"],
+      "respuestas": ["Accede a la página web de UBank o\n descarga su aplicativo y sigue los siguientes pasos:\n 1. Selecciona Cuenta de ahorros en línea en el menú\n 2. Escoge tu oficina de gestión\n 3. Anexa todos los datos y documentos correspondiente\n 4. Confirma el correo eléctronico y el lugar donde será entregada tu tarjeta débito"]
+    },
+
+    {
+      "tag": "cuenta-corriente",
+      "patrones":  ["2. Cuenta corriente", "Opción 2", "2", "Cuenta corriente", "La segunda opción", "La de cuenta corriente"],
+      "respuestas": ["Comprendo, nos enfocaremos en la cuenta corriente, ahora dime ¿en que te puedo ayudar?",
+                             "Por supuesto, conozcamos las más sobre las cuentas corriente, dime ¿que necesitas saber?",
+                             "Oh! Cuenta corriente, como puedo ayudarte en esta categoría?"]
+    },
+
+
+    {
+      "tag": "cuenta-corriente-definicion",
+      "patrones":  ["¿Qué es una cuenta corriente?", "Explicame que es una cuenta corriente", "No sé que es un cuenta corriente",
+                              "¿Para qué es una cuenta corriente?"],
+      "respuestas": ["Una cuenta corriente es un producto que te permite administrar tu dinero de forma fácil y segura. Se caracteriza porque puedes hacer uso de tu dinero por medio de una tarjeta débito o cheques",
+                             "Una cuenta corriente es un contrato bancario por el cual el cliente realiza un depósito en la entidad financiera. Así, puede disponer de dichos fondos a través del cajero automático, ventanilla, cheques, transferencias electrónicas, entre otro",
+                             "Una cuenta corriente es un tipo de cuenta bancaria con características similares a la cuenta de ahorro pero permite hacer operaciones ideales para emprendedores, jóvenes independientes o negocios, cómo por ejemplo la emisión de cheques o giros de dinero"]
+    },
+
+    {
+      "tag": "cuenta-corriente-obtenerla",
+      "patrones":  ["¿Cómo puedo obtener la cuenta corriente?", "¿Cómo puedo adquirir la cuenta corrinete?", "¿Cómo puedo sacar un cuenta corriente?",
+                              "¿Que se debe hacer para conseguir una cuenta corriente?"],
+      "respuestas": ["Accede a la página web de UBank o descarga su aplicativo y sigue los siguientes pasos: 1. Selecciona Cuenta corrinte en línea en el menú  2. Escoge tu oficina de gestión   3. Anexa todos los datos y documentos correspondiente  4. Confirma el correo eléctronico y el lugar donde será entregada tu tarjeta débito"]
+    },
+
+    {
+      "tag": "tarjeta-credito",
+      "patrones":  ["3. Tarjeta de crédito", "Opción 3", "3", "Tarjeta de crédito", "La tercera opción", "La de tarjeta de crédito"],
+      "respuestas": ["Comprendo, nos enfocaremos en la tarjeta de crédito, ahora dime ¿en que te puedo ayudar?",
+                             "Por supuesto, conozcamos las más sobre las tarjetas de crédito, dime ¿que necesitas saber?",
+                             "Oh! Tarjeta de crédito, como puedo ayudarte en esta categoría?"]
+    },
+
+    {
+      "tag": "tarjeta-credito-definicion",
+      "patrones":  ["¿Qué es una tarjeta de crédito", "Explicame que es una tarjeta de crédito", "No sé que es una tarjeta de crédito",
+                              "¿Para qué es una tarjeta de crédito?"],
+      "respuestas": ["Tarjeta emitida por una entidad bancaria que permite realizar ciertas operaciones desde un cajero automático y la compra de bienes y servicios a crédito",
+                             "Una tarjeta de crédito es una manera conveniente de pedir prestado dinero para pagar por las cosas. No necesitas llevar dinero en efectivo y puedes usarlo para pagar por Internet o en persona. Incluso puedes utilizarlo para pagar cosas en el exterior",
+                             "Una tarjeta de crédito es un medio de pago que te permite hacer compras y cancelar el valor posteriormente. Es “de crédito” porque la suma de dinero que usas cuando haces una compra, corresponde a un préstamo "]
+    },
+
+    {
+      "tag": "tarjeta-credito-solicitud",
+      "patrones":  ["¿Cómo puedo obtener la tarjeta de crédito", "¿Cómo puedo adquirir la tarjeat de crédito?", "¿Cómo puedo sacar una tarjeta de crédito?",
+                              "¿Que se debe hacer para conseguir una tarjeta de crédito?"],
+      "respuestas": ["Accede a la página web de UBank o descarga su aplicativo y sigue los siguientes pasos: 1. Selecciona Tarjeta de Crédito en línea en el menú  2. Anexa todos los datos y documentos correspondiente  3. Debes esperar que a tu correo electrónico llegue la respuesta   4. Desde el aplicativo activar la tarjeta" ]
+    },
+
+    {
+      "tag": "tarjeta-credito-tipos",
+      "patrones":  ["¿Qué tipos de tarjetas hay?", "¿Cuáles tarjetas manejan?", "¿Cuál es la cuota de manejo?", "¿Cuál es el interés?"],
+      "respuestas": ["UBank maneja dos tipos de tarjetas: - Tarjeta Econo y - Tarjeta gold. Ambas manejan un interés del 2.5%, mientras que la cuota de manejo difiere en ambas, la primera con $10.500 y la segunda con $22.500" ]
+    },
+
+    {
+      "tag": "prestamos",
+      "patrones":  ["4. Préstamos", "Opción 4", "4", "Préstamos", "La cuarta opción", "La de préstamos"],
+      "respuestas": ["Comprendo, nos enfocaremos en los préstamos, ahora dime ¿en que te puedo ayudar?",
+                             "Por supuesto, conozcamos las más sobre los préstamos dime ¿que necesitas saber?",
+                             "Oh! Préstamos, como puedo ayudarte en esta categoría?"]
+    },
+
+    {
+      "tag": "prestamos-definicion",
+      "patrones":  ["¿Qué es un préstamo", "Explicame que es un préstamo", "No sé que es un préstamo",
+                              "¿Para qué es un préstamos?"],
+      "respuestas": ["Es un contrato en cual la entidad financiera entrega al cliente una cantidad determinada de dinero a cambio de su devolución en un determinado plazo con el pago de los correspondientes intereses",
+                             "Un préstamo financiero es una operación mediante la cual el banco entrega una cantidad de dinero al cliente, que se compromete a devolver lo recibido, junto con los intereses pactados",
+                             "Este concepto hace referencia a un préstamo de dinero que realiza una entidad financiera, para que una persona natural o jurídica pueda comprar. Por supuesto, esta se debe comprometer en un futuro a devolver la cantidad de dinero solicitada"]
+    },
+
+    {
+      "tag": "prestamos-tipos",
+      "patrones":  ["¿Qué tipos de préstamos existen?", "Tipos de préstamos"],
+      "respuestas": ["Hay diferentes tipos de préstamos como lo son: *Personales  *Consumo  *Estudios  *Hipotecarios  *Para empresa",
+                             "Recuerda que existen diferentes tipos de préstamos por ejemplo: *Consumo  *Hipoteca  *Estudio  *Personales  *Para empresa"]
+    },
+
+    {
+      "tag": "prestamos-requisitos",
+      "patrones":  ["¿Qué requisitos se necesitan para acceder a un préstamo?", "Requisitos para un préstamo", "¿Cómo obtener un préstamo?"],
+      "respuestas": ["Recuerdo que todo depende del préstamo que necesites, pero de manera general: *Documentos personales  *Documentos de ingresos  *Petición escrita para que y por qué el préstamo",
+                             "Es una respuesta variable, pero a grandes rasgos se necesita: *Solicitud del préstamo indicando el por qué y para que del mismo  *Certificado de ingresos  *Documentos con información personal"]
+    }
+]
+}
