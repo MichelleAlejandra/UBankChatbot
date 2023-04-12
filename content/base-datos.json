@@ -1,0 +1,90 @@
+{
+    "data": [
+        {
+            "user": "Michelle",
+            "pregunta": [
+                "mi nombre es Michelle",
+                "información",
+                "tarjeta",
+                "Chao"
+            ],
+            "respuesta": [
+                "Bienvenido al soporte en línea de \n UBank, ¿cómo te podemos ayudar?",
+                "¡Hasta la próxima!",
+                "Por supuesto, conozcamos las más sobre las tarjetas de crédito, dime ¿que necesitas saber?",
+                "Adiós, espero haber sido de ayuda, cuidate"
+            ]
+        },
+        {
+            "user": "Camila",
+            "pregunta": [
+                "mi nombre es Camila",
+                "cruce",
+                "Chao"
+            ],
+            "respuesta": [
+                "Hola soy tu asistente virtual de UBank",
+                "Oh! Préstamos, como puedo ayudarte en esta categoría?",
+                "Espero haber ser de utilidad, nos hablamos en una próxima ocasión"
+            ]
+        },
+        {
+            "user": "Michelle",
+            "pregunta": [
+                "mi nombre es Michelle",
+                "Quiero saber sobre tarjetas de crédito",
+                "Chao"
+            ],
+            "respuesta": [
+                "Bienvenido al soporte en línea de \n              UBank, ¿cómo te podemos ayudar?",
+                "Recuerda que algunos beneficios\n              son:\n              *Utilizada por una o más personas\n              *Compras por internet\n              *Mejora tu historial crediticio\n              *Controlar mejor tus gastos\n              *Descuentos y promociones",
+                "Cuidate, que tengas un lindo día"
+            ]
+        },
+        {
+            "user": "Bob",
+            "pregunta": [
+                "mi nombre es Bob esponja",
+                "tarjeta",
+                "Gracias"
+            ],
+            "respuesta": [
+                "Bienvenido al soporte en línea de                UBank, ¿cómo te podemos ayudar?",
+                "UBank maneja dos tipos detarjetas:               - Tarjeta Econo y - Tarjeta gold. Ambas manejan               un interés del 2.5%,mientras               que la cuota demanejo difiere               en ambas, la primera con               $10.500 y la segunda con               $22.500",
+                "Nos hablamos en una próxima ocasión"
+            ]
+        },
+        {
+            "user": "SpiderMan",
+            "pregunta": [
+                "mi nombre es SpiderMan",
+                "Pagos",
+                "Que son",
+                "No sé",
+                "Chao"
+            ],
+            "respuesta": [
+                "Bienvenido al soporte en línea de \n              UBank, ¿cómo te podemos ayudar?",
+                "Oh! Pagos, como puedo ayudarte\n              en esta categoría?",
+                "Por supuesto, conozcamos las\n              más sobre los pagos dime\n              ¿que necesitas saber?",
+                "Claro que sí, por favor escoge\n              una categoría que creas que es\n             a fin a tu necesidad:\n             1. Cuenta de ahorros\n              2. Tarjeta de crédito\n              3. Pagos",
+                "Adiós, espero haber sido de ayuda, cuidate"
+            ]
+        },
+        {
+            "user": "Pedro",
+            "pregunta": [
+                "mi nombre es Pedro",
+                "Ayuda",
+                "3",
+                "Chao"
+            ],
+            "respuesta": [
+                "Buen día, te habla tu asistente virtual  de UBank, ¿Como te podemos ayudar?",
+                "Para ayudarte, necesito que me  ayudes a conocer un poco más,  escoge alguna de las siguientes  opciones:  1. Cuenta de ahorros  2. Tarjeta de crédito  3. Pagos",
+                "Buen día, te habla tu asistente virtual  de UBank, ¿Como te podemos ayudar?",
+                "Adiós, espero haber sido de ayuda, cuidate"
+            ]
+        }
+    ]
+}

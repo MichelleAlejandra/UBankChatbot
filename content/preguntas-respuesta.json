@@ -1,0 +1,115 @@
+{"contenido": [
+    {
+      "tag": "saludo",
+      "posibles-preguntas":  ["hola", "saludos", "mi nombre", "buenas", "hello"],
+      "posibles-respuesta": ["¡Hola!, ¿cómo podemos ayudarte?",
+                              "Hola soy tu asistente virtual de UBank",
+                              "Bienvenido al soporte en línea de \n              UBank, ¿cómo te podemos ayudar?",
+                              "¡Gracias por comunicarte con UBank!\n              ¿Cómo te ayudamos?",
+                              "Buen día, te habla tu asistente virtual\n              de UBank, ¿Como te podemos ayudar?"]
+    },
+
+    {
+      "tag": "despedida",
+      "posibles-preguntas":  ["adios","chao", "hata luego", "nos vemos", "gracias"],
+      "posibles-respuesta": ["¡Hasta la próxima!", "Hasta luego, fue un placer ayudarte!",
+                              "Espero haber ser de utilidad, nos hablamos en una próxima ocasión",
+                              "Fue un gusto ayudarte, que tengas un buen día", "Hasta pronto, UBank siempre contigo",
+                              "Gracias por utiliza nuestros soporte de UBank, chau",
+                              "Nos hablamos en una próxima ocasión", "Adiós, espero haber sido de ayuda, cuidate",
+                              "Cuidate, que tengas un lindo día"]
+    },
+
+    {
+      "tag": "opciones-principales",
+      "posibles-preguntas":  ["ayuda", "Opciones", "información"],
+      "posibles-respuesta": ["Claro que sí, por favor escoge\n              una categoría que creas que es\n             a fin a tu necesidad:\n             1. Cuenta de ahorros\n              2. Tarjeta de crédito\n              3. Pagos\n",
+                             "Estoy para ayudarte, pero necesito \n              conocer un poco más,escoge\n              la opción más\n              adecuada para ti:\n              1. Cuenta de ahorros\n              2. Tarjeta de crédito\n              3. Pagos\n",
+                             "Por supuesto, cuentame a que\n              categoría se asocia tu necesidad\n              (escoge solo una):\n              1. Cuenta de ahorros\n              2. Tarjeta de crédito\n              3. Pagos\n",
+                             "Para ayudarte, necesito que me\n              ayudes a conocer un poco más,\n              escoge alguna de las siguientes\n              opciones:\n              1. Cuenta de ahorros\n              2. Tarjeta de crédito\n              3. Pagos\n"]
+    },
+
+    {
+      "tag": "cuenta-ahorros",
+      "posibles-preguntas":  ["cuenta", "ahorros", "1", "primera"],
+      "posibles-respuesta": ["Comprendo, nos enfocaremos en\n              la cuenta de ahorros, ahora dime ¿en\n              que te puedo ayudar?",
+                             "Por supuesto, conozcamos más sobre\n              las cuentas de ahorros, dime ¿que\n              necesitas saber?",
+                             "Oh! Cuenta de ahorros, como puedo\n              ayudarte en esta categoría?"]
+    },
+
+    {
+      "tag": "cuenta-ahorros-definicion",
+      "posibles-preguntas":  ["cuenta de ahorros", "¿qué es cuenta de ahorros", "definición cuenta ahorros"],
+      "posibles-respuesta": ["Una cuenta de ahorros es un producto\n              financiero ofrecido por el Banco que te\n              permite ahorrar tu dinero de forma\n              segura. Tradicionalmente, la cuenta de\n              ahorros es el producto más usado\n              para que puedas ahorrar y disponer de\n              tu dinero de forma rápida",
+                             "Una cuenta de ahorro es un producto\n              financiero que genera una rentabilidad\n              con un tipode interés variable a\n              cambio de depositar el dinero en la\n              cuenta. Además, al mismo tiempo\n              permite acceder a ese capital\n              siempre que sea necesario",
+                             "Las Cuentas de Ahorro son un tipo de\n              ahorro orientado quienes tienen la\n              capacidad de juntar dinero en forma\n              periódica, ya que pueden abrirse\n              y mantenerse con bajos montos."]
+    },
+
+    {
+      "tag": "cuenta-ahorros-obtenerla",
+      "posibles-preguntas":  ["obtener cuenta ahorros", "adqurir cuenta ahorros", "conseguir cuenta de ahorros"],
+      "posibles-respuesta": ["Accede a la página web de UBank o\n              descarga su aplicativo y sigue\n              los siguientes pasos:\n              1. Selecciona Cuenta de ahorros en línea en el menú\n              2. Escoge tu oficina de gestión\n              3. Anexa todos los datos y documentos correspondiente\n              4. Confirma el correo eléctronico y el\n              lugar donde será entregada tu\n              tarjeta débito"]
+    },
+
+    {
+      "tag": "cuenta-ahorros-beenficios",
+      "posibles-preguntas":  ["beneficios cuenta ahorros", "pros cuenta de ahorros"],
+      "posibles-respuesta": ["Algunos de los beneficios que tiene\n              al adquirir la cuenta de\n              ahorros son:\n              *Ganar intereses\n              *Acceso inmediato a tu dinero\n              *No es necesario tener un monto elevado\n              *Cultivar el hábito del ahorro",
+                             "Recuerda que algunos beneficios\n               son:\n              *Acceso inmediato a tu dinero\n              *Cultivar el hábito del ahorro\n              *Ganar intereses\n              *No es necesario tener un monto elevado",
+                             "Al adquirir la cuenta de\n              ahorros tiene beneficios como:\n              *Ganar intereses\n             *Transferencia sin costos\n              *Crear hábitos de ahorro\n              *Tener dinero disponible"]
+
+    },
+
+    {
+      "tag": "tarjeta-credito-definicion",
+      "posibles-preguntas":  ["¿que es tarjeta?", "explicar tarjeta credito", "definición tarjeta crédito"],
+      "posibles-respuesta": ["Tarjeta emitida por una entidad\n              bancaria que permite realizar\n              ciertas operaciones desde un\n              cajero automático y la\n              compra de bienes y servicios\n              a crédito",
+                             "Una tarjeta de crédito es una\n              manera conveniente de pedir\n              prestado dinero para pagar por\n              las cosas. No necesitas llevar\n              dinero en efectivo y puedes\n              usarlo para pagar por\n              Internet o en persona. Incluso\n              puedes utilizarlo para pagar\n              cosas en el exterior",
+                             "Una tarjeta de crédito es un\n              medio de pago que te permite\n              hacer compras y cancelar el\n              valor posteriormente. Es “de\n               crédito” porque la suma de\n              dinero que usas cuando haces\n              una compra, corresponde a un\n              préstamo "]
+    },
+
+    {
+      "tag": "tarjeta-credito-beneficios",
+      "posibles-preguntas":  ["beneficios tarjeta crédito", "ventajas tarjeta crédito", "pros tarjeta credito"],
+      "posibles-respuesta": ["Algunos de los beneficios que\n              tiene al adquirir la tarjeta de\n              crédito son:\n              *Mejora tu historial crediticio\n              *Compras por internet\n              *Más seguridad\n              *Controlar mejor tus gastos",
+                             "Recuerda que algunos beneficios\n              son:\n              *Utilizada por una o más personas\n              *Compras por internet\n              *Mejora tu historial crediticio\n              *Controlar mejor tus gastos\n              *Descuentos y promociones",
+                             "Al adquirir la cuenta corriente\n              tiene beneficios como:\n              *Emitir cheques\n              *Descuentos y promociones\n              *Mejora tu historial crediticio\n              *Controlar mejor tus gastos\n              *Más seguridad"]
+    },
+
+    {
+      "tag": "tarjeta-credito-solicitud",
+      "posibles-preguntas":  ["obtener tarjeta credito", "adquirir tarjeta crédito", "conseguir tarjeta crédito"],
+      "posibles-respuesta": ["Accede a la página web de UBank\n              o descarga su aplicativo y sigue\n              los siguientes pasos:\n              1. Selecciona Tarjeta de Crédito\n              en línea en el menú\n              2. Anexa todos los datos y\n              documentos correspondiente\n              3. Debes esperar que a tu\n              correo electrónico llegue la\n              respuesta\n              4. Desde el aplicativo activar\n              la tarjeta" ]
+    },
+
+    {
+      "tag": "tarjeta-credito-tipos",
+      "posibles-preguntas":  ["tipos tarjeta", "cuales tarjetas", "cuota manejo", "interes"],
+      "posibles-respuesta": ["UBank maneja dos tipos detarjetas:\n              - Tarjeta Econo y - Tarjeta gold. Ambas manejan\n              un interés del 2.5%,mientras\n              que la cuota demanejo difiere\n              en ambas, la primera con\n              $10.500 y la segunda con\n              $22.500" ]
+    },
+
+    {
+      "tag": "pagos",
+      "posibles-preguntas":  ["pago", "4", "cuarta"],
+      "posibles-respuesta": ["Comprendo, nos enfocaremos en\n              los pagos, ahora dime ¿en\n              que te puedo ayudar?",
+                             "Por supuesto, conozcamos las\n              más sobre los pagos dime\n              ¿que necesitas saber?",
+                             "Oh! Pagos, como puedo ayudarte\n              en esta categoría?"]
+    },
+
+    {
+      "tag": "pagos-definición",
+      "posibles-preguntas":  ["que es pagos", "explicar pago", "definición pago"],
+      "posibles-respuesta": ["Se basa en la entrega de\n              un bien, servicio o activo\n              financiero a cambio de\n              otro bien, servicio o\n              activo financiero",
+                             "Un pago es aquella contraprestación\n              que se realiza a cambio de\n              haber  adquirido un producto,\n              un servicio o un activo"]
+    },
+
+    {
+      "tag": "pagos-tipos",
+      "posibles-preguntas":  ["tipos pago", "medio pago", "como pagar"],
+      "posibles-respuesta": ["Existen diferentes medios de pago\n              para ajustarse a tus comodidades:\n              *Efectivo\n              *Cheques\n              *Tarjeta débito\n              *Tarjeta crédito\n              *Pagos móviles\n              *Transferencias",
+                             "Recuerda que para pagar hay\n              diferentes modalidades como:\n              *Tarjetas\n              *Transferencias\n              *Efectivo\n              *Pagos móviles",
+                             "A grandes rasgos se tienen dos\n              métodos de pago muy conocidos:\n              *Pago en efectivo\n              *Pago a crédito"]
+    }
+
+]
+}
