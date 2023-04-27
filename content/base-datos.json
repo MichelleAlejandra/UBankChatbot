@@ -85,6 +85,21 @@
                 "Buen día, te habla tu asistente virtual  de UBank, ¿Como te podemos ayudar?",
                 "Adiós, espero haber sido de ayuda, cuidate"
             ]
+        },
+        {
+            "user": "michelle",
+            "pregunta": [
+                "Mi nombre es michelle ",
+                "quisiera saber sobre los pagos de tarjeta",
+                "Muchas gracias ",
+                "Gracias"
+            ],
+            "respuesta": [
+                "¡Hola!, ¿cómo podemos ayudarte?",
+                "A grandes rasgos se tienen dos  métodos de pago muy conocidos:  *Pago en efectivo  *Pago a crédito",
+                "Cuidate, que tengas un lindo día",
+                "Hasta pronto, UBank siempre contigo"
+            ]
         }
     ]
 }

@@ -1,4 +1,5 @@
 # -------------------------------------- Librerías
+import os
 from tkinter import *
 from tkinter import messagebox
 
@@ -13,9 +14,9 @@ import nltk
 import tensorflow as tf
 import tflearn
 from nltk.tokenize import word_tokenize
-from nltk.stem.lancaster import LancasterStemmer  # Transformar palabras - quitar letras de mas
+from nltk.stem.snowball import SnowballStemmer
 
-stemmer = LancasterStemmer()
+stemmer = SnowballStemmer('spanish')
 
 # Inicialización de variables
 questions_asked = []
@@ -26,8 +27,10 @@ words = []
 tags = []
 docs_x = []
 docs_y = []
+parting_words = ['adios', 'adiós', 'hasta la proxima', 'hasta la próxima', 'chao', 'hasta luego', 'nos vemos',
+                 'gracias']
 
-# --------------------------------------- Entrenamiento chat
+# --------------------------------------- Constucción chat
 with open('content/preguntas-respuesta.json', encoding='utf-8') as file:
     data = json.load(file)
 
@@ -56,7 +59,6 @@ output = []
 out_empty = [0 for _ in range(len(tags))]
 
 for x, doc in enumerate(docs_x):
-
     # Convertir cada palabra del documento en su raíz y crear un array de palabras
     bag = []
     wrds_list = [stemmer.stem(w.lower()) for w in doc]
@@ -102,17 +104,24 @@ model.save('./files/modelo.tflearn')
 
 
 # Función para clasificar una entrada y obtener la respuesta del chatbot
-def classify(sentence):
+def classify_input(sentence):
+    # Se llena de ceros una lista del mismo tamaño que la lista con las palabras tokenizadas
     bag = [0 for _ in range(len(words))]
+
+    # Se crea una lista con las palabras que contiene la oración
     input_processed = nltk.word_tokenize(sentence)
+
+    # Se pone en miniscula cada palabra y se reduce cada palabra a su raiz
     input_processed = [stemmer.stem(word.lower()) for word in input_processed]
 
+    # Se compara la lista de palabras procesada y la lista de palabras anteriormente establecida
     for individual_word in input_processed:
         for i, word in enumerate(words):
-
             if word == individual_word:
+                # Settea con 1 la posición equivalente en la lista bag en caso de coincidir
                 bag[i] = 1
 
+    # Se realiza la predicción según el modelo entrenado
     results = model.predict([np.array(bag)])
     index_results = np.argmax(results)
     tag = tags[index_results]
@@ -123,13 +132,13 @@ def classify(sentence):
             return random.choice(answers)
 
 
-# ------------------------------------------------------- Entrenamiento
+# ------------------------- Entrenamiento ------------------------------
 with open('content/base-datos.json', 'r', encoding='utf-8') as archivo:
     collected_data = json.load(archivo)
 
 
 # Se escribe el archivo JSON con todas las preguntas
-def escribirJson():
+def escribir_json():
     for user in users:
         collected_data["data"].append({
             'user': user,
@@ -147,7 +156,8 @@ for user in collected_data["data"]:
         preguntas_usuario.append(pregunta)
 
 
-def explorarDatos():
+def explorar_datos():
+    print('\r' + ' ' * 100 + '\r', end='')
     total_preguntas = len(preguntas_usuario)
     print('El total de preguntas de la exploración son:', total_preguntas, "\n")
 
@@ -158,19 +168,19 @@ def explorarDatos():
         pregunta_aleatoria = random.choice(preguntas_usuario)
         print('Una pregunta aleatoria de las que nos han proporcionado los usuarios es: ', pregunta_aleatoria, "\n")
 
-    preguntas_procesadas = [[LancasterStemmer().stem(palabra) for palabra in word_tokenize(pregunta.lower())] for
+    preguntas_procesadas = [[stemmer.stem(palabra) for palabra in word_tokenize(pregunta.lower())] for
                             pregunta in preguntas_usuario]
     palabras_preguntas = [palabra for pregunta in preguntas_procesadas for palabra in pregunta]
     palabras_frecuentes_preguntas = Counter(palabras_preguntas).most_common(10)
     print('Las palabras que se utilizan en las preguntas con su frecuencia son: ', palabras_frecuentes_preguntas, "\n")
 
 
-# ------------------------------------------------------- Función principal
+# ------------------------------- Función principal ------------------------
 def main(message):
-    explorarDatos()
+    explorar_datos()
     if message != '' and message != ' ':
         patron = r"mi nombre es (\w+)"
-        result = re.search(patron, message)
+        result = re.search(patron, message.lower())
         if result:
             users.append(result.group(1))
 
@@ -179,27 +189,29 @@ def main(message):
         chatLog.image_create(END, image=imageUser)
         chatLog.insert(END, "  " + message + "\n")
 
-        respuestaChat = classify(message)
+        respuesta_chat = classify_input(message)
 
         # Salida
         chatLog.insert(END, "_" * 38 + "\n\n    ")
         chatLog.image_create(END, image=imageChat)
-        chatLog.insert(END, "  " + respuestaChat + '\n')
+        chatLog.insert(END, "  " + respuesta_chat + '\n')
 
         texto.set("")
 
         questions_asked.append(message)
-        answers_given.append(respuestaChat)
+        answers_given.append(respuesta_chat)
 
-        if message == 'Adios' or message == 'Hasta la proxima' or message == 'Chao' or message == 'Hasta luego' or message == 'Hasta pronto' or message == 'Nos vemos' or message == 'Gracias':
-            escribirJson()
+        if message.lower() in parting_words:
+            escribir_json()
             root.destroy()
 
     else:
         messagebox.showerror("Error", "Por favor ingrese un texto valido")
 
 
-# Interfaz grafica
+# ---------------------------------------  Interfaz gráfica ------------------------------------
+
+
 # Inicialización de la ventana principal del chatBot
 root = Tk()
 root.geometry('400x600')
@@ -229,11 +241,20 @@ Label(root, text="- UBank -", font=('Opensans', 14), bg="black", foreground="whi
 
 # TEXTFIELD
 texto = StringVar()
-eImage = Label(root, image=txt_image, border=0, bg="white").place(x=32, y=553)
-txt = Entry(root, width=34, border=0, font=('bold', 11), bg="#EEEEEE", textvariable=texto).place(x=42, y=560)
+Label(root, image=txt_image, border=0, bg="white").place(x=32, y=553)
+input_text = Entry(root, width=34, border=0, font=('bold', 11), bg="#EEEEEE", textvariable=texto)
+input_text.place(x=42, y=560)
 
 # BOTÓN ENVIAR
 Button(root, image=send, command=lambda: main(texto.get()), background="white", borderwidth=0).place(x=335, y=556)
+
+
+def on_keypress(event):
+    if event.keysym == 'Return':
+        main(texto.get())
+
+
+input_text.bind('<KeyPress>', on_keypress)
 
 root.title("UBank Chatbot")
 root.iconphoto(False, logoPic)
