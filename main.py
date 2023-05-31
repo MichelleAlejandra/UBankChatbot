@@ -15,6 +15,8 @@ import tensorflow as tf
 import tflearn
 from nltk.tokenize import word_tokenize
 from nltk.stem.snowball import SnowballStemmer
+import pandas as pd
+import codecs
 
 stemmer = SnowballStemmer('spanish')
 
@@ -23,12 +25,15 @@ questions_asked = []
 answers_given = []
 preguntas_usuario = []
 users = []
+edades = []
+generos = []
 words = []
 tags = []
 docs_x = []
 docs_y = []
 parting_words = ['adios', 'adiós', 'hasta la proxima', 'hasta la próxima', 'chao', 'hasta luego', 'nos vemos',
                  'gracias']
+tag_classify = ""
 
 # --------------------------------------- Constucción chat
 with open('content/preguntas-respuesta.json', encoding='utf-8') as file:
@@ -52,6 +57,7 @@ for content in data['contenido']:
 words = [stemmer.stem(w.lower()) for w in words if w != '?']  # Casteo de palabra
 words = sorted(list(set(words)))
 tags = sorted(tags)
+print(tags)
 
 # Crea una matriz de ceros con el número de etiquetas y palabras
 training = []
@@ -125,12 +131,55 @@ def classify_input(sentence):
     results = model.predict([np.array(bag)])
     index_results = np.argmax(results)
     tag = tags[index_results]
+    tag_classify = tag
 
     for tagA in data['contenido']:
         if tagA['tag'] == tag:
             answers = tagA['posibles-respuesta']
-            return random.choice(answers)
+            return tag_classify, random.choice(answers)
 
+with open('content/base-datos.json', 'r', encoding='utf-8') as archivo:
+    down_data = json.load(archivo)
+
+def escribir_excel():
+   
+    categorias = [
+    "saludo", "despedida", "opciones-principales", "cuenta-ahorros",
+    "cuenta-ahorros-definicion", "cuenta-ahorros-obtenerla", "cuenta-ahorros-beenficios",
+    "tarjeta-credito", "tarjeta-credito-definicion", "tarjeta-credito-beneficios",
+    "tarjeta-credito-solicitud", "tarjeta-credito-tipos", "pagos", "pagos-definición", "pagos-tipos"]
+    
+    # Crear un diccionario para almacenar los datos
+    datos = {'user': [], 'edad': [], 'genero': []} 
+    for categoria in categorias:
+        datos[categoria] = []
+
+    # Procesar cada entrada del archivo JSON
+    for entry in down_data['data']:
+        usuario = entry['user']
+        edad = entry['edad']
+        genero = entry['genero']
+        preguntas_usuario = entry['pregunta']
+        datos['user'].append(usuario)
+        datos['edad'].append(edad)
+        datos['genero'].append(genero)
+        # Comprobar si el usuario hizo preguntas en cada categoría
+        # Crear un diccionario temporal para rastrear las categorías
+        temp_data = {categoria: 0 for categoria in categorias}
+
+        # Comprobar si el usuario hizo preguntas en cada categoría
+        for pregunta in preguntas_usuario:
+            tag, respuesta_chat = classify_input(pregunta)
+            if tag in categorias:
+                temp_data[tag] = 1
+
+        # Agregar los valores al diccionario de datos
+        for categoria in categorias:
+            datos[categoria].append(temp_data[categoria])
+    
+    # Crear un DataFrame a partir del diccionario de datos
+    df = pd.DataFrame(datos)
+    df.to_excel('content/resultado.xlsx', index=False)
 
 # ------------------------- Entrenamiento ------------------------------
 with open('content/base-datos.json', 'r', encoding='utf-8') as archivo:
@@ -139,9 +188,11 @@ with open('content/base-datos.json', 'r', encoding='utf-8') as archivo:
 
 # Se escribe el archivo JSON con todas las preguntas
 def escribir_json():
-    for user in users:
+    for i, user in enumerate(users):
         collected_data["data"].append({
             'user': user,
+            'edad': edades[i],
+            'genero': generos[i],
             'pregunta': questions_asked,
             'respuesta': [texto.strip().replace('\n            ', '') for texto in answers_given],
         })
@@ -177,19 +228,32 @@ def explorar_datos():
 
 # ------------------------------- Función principal ------------------------
 def main(message):
-    explorar_datos()
+   # explorar_datos()
     if message != '' and message != ' ':
         patron = r"mi nombre es (\w+)"
+        patronEdad = r"mi edad es (\w+)"
+        patronGenero = r"mi género es (\w+)"
         result = re.search(patron, message.lower())
+        result01 = re.search(patronEdad, message.lower())
+        result02 = re.search(patronGenero, message.lower())
+
         if result:
             users.append(result.group(1))
+        
+        if result01:
+            edades.append(result01.group(1))
+
+        if result02:
+            generos.append(result02.group(1))
+        
 
         # Entrada
         chatLog.insert(END, "_" * 38 + "\n\n    ")
         chatLog.image_create(END, image=imageUser)
         chatLog.insert(END, "  " + message + "\n")
 
-        respuesta_chat = classify_input(message)
+        tag, respuesta_chat = classify_input(message)
+        
 
         # Salida
         chatLog.insert(END, "_" * 38 + "\n\n    ")
@@ -207,6 +271,8 @@ def main(message):
 
     else:
         messagebox.showerror("Error", "Por favor ingrese un texto valido")
+    
+    escribir_excel()
 
 
 # ---------------------------------------  Interfaz gráfica ------------------------------------

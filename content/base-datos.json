@@ -2,6 +2,8 @@
     "data": [
         {
             "user": "Michelle",
+            "edad": "20",
+            "genero": "femenino",
             "pregunta": [
                 "mi nombre es Michelle",
                 "información",
@@ -17,6 +19,8 @@
         },
         {
             "user": "Camila",
+            "edad": "25",
+            "genero": "femenino",
             "pregunta": [
                 "mi nombre es Camila",
                 "cruce",
@@ -30,6 +34,8 @@
         },
         {
             "user": "Michelle",
+            "edad": "17",
+            "genero": "femenino",
             "pregunta": [
                 "mi nombre es Michelle",
                 "Quiero saber sobre tarjetas de crédito",
@@ -43,6 +49,8 @@
         },
         {
             "user": "Bob",
+            "edad": "32",
+            "genero": "masculino",
             "pregunta": [
                 "mi nombre es Bob esponja",
                 "tarjeta",
@@ -56,6 +64,8 @@
         },
         {
             "user": "SpiderMan",
+            "edad": "35",
+            "genero": "masculino",
             "pregunta": [
                 "mi nombre es SpiderMan",
                 "Pagos",
@@ -73,6 +83,8 @@
         },
         {
             "user": "Pedro",
+            "edad": "45",
+            "genero": "masculino",
             "pregunta": [
                 "mi nombre es Pedro",
                 "Ayuda",
@@ -88,6 +100,8 @@
         },
         {
             "user": "michelle",
+            "edad": "22",
+            "genero": "femenino",
             "pregunta": [
                 "Mi nombre es michelle ",
                 "quisiera saber sobre los pagos de tarjeta",
@@ -99,6 +113,252 @@
                 "A grandes rasgos se tienen dos  métodos de pago muy conocidos:  *Pago en efectivo  *Pago a crédito",
                 "Cuidate, que tengas un lindo día",
                 "Hasta pronto, UBank siempre contigo"
+            ]
+        },
+        {
+            "user": "camila",
+            "edad": "28",
+            "genero": "femenino",
+            "pregunta": [
+                "Mi nombre es Camila",
+                "Opciones",
+                "Cuenta de ahorros",
+                "1",
+                "Obtener una cuenta de ahorros",
+                "Beneficios de la cuenta de ahorros",
+                "Adiós"
+            ],
+            "respuesta": [
+                "Hola soy tu asistente virtual de UBank",
+                "Estoy para ayudarte, pero necesito   conocer un poco más,escoge  la opción más  adecuada para ti:  1. Cuenta de ahorros  2. Tarjeta de crédito  3. Pagos",
+                "Las Cuentas de Ahorro son un tipo de  ahorro orientado quienes tienen la  capacidad de juntar dinero en forma  periódica, ya que pueden abrirse  y mantenerse con bajos montos.",
+                "Oh! Cuenta de ahorros, como puedo  ayudarte en esta categoría?",
+                "Accede a la página web de UBank o  descarga su aplicativo y sigue  los siguientes pasos:  1. Selecciona Cuenta de ahorros en línea en el menú  2. Escoge tu oficina de gestión  3. Anexa todos los datos y documentos correspondiente  4. Confirma el correo eléctronico y el  lugar donde será entregada tu  tarjeta débito",
+                "Al adquirir la cuenta de  ahorros tiene beneficios como:  *Ganar intereses *Transferencia sin costos  *Crear hábitos de ahorro  *Tener dinero disponible",
+                "Por supuesto, cuentame a que  categoría se asocia tu necesidad  (escoge solo una):  1. Cuenta de ahorros  2. Tarjeta de crédito  3. Pagos"
+            ]
+        },
+        {
+            "user": "javier",
+            "edad": "32",
+            "genero": "masculino",
+            "pregunta": [
+                "Mi nombre es Javier",
+                "Información",
+                "Definime tarjeta de crédito",
+                "Explicar tarjeta de crédito",
+                "Como es la cuota de manejo",
+                "Como adquirir una tarjeta de crédito",
+                "Gracias"
+            ],
+            "respuesta": [
+                "Bienvenido al soporte en línea de UBank, ¿cómo te podemos ayudar?",
+                "Claro que sí, por favor escoge una categoría que creas que es a fin a tu necesidad: 1. Cuenta de ahorros 2. Tarjeta de crédito 3. Pagos",
+                "Tarjeta emitida por una entidad bancaria que permite realizar ciertas operaciones desde un cajero automático y la compra de bienes y servicios a crédito",
+                "Una tarjeta de crédito es unmedio de pago que te permite hacer compras y cancelar el valor posteriormente. Es “de crédito” porque la suma de dinero que usas cuando haces una compra, corresponde a un préstamo ",
+                "UBank maneja dos tipos detarjetas: - Tarjeta Econo y - Tarjeta gold. Ambas manejan un interés del 2.5%,mientras que la cuota demanejo difiere en ambas, la primera con $10.500 y la segunda con $22.500",
+                "Accede a la página web de UBank\n              o descarga su aplicativo y sigue los siguientes pasos: 1. Selecciona Tarjeta de Crédito en línea en el menú 2. Anexa todos los datos y documentos correspondiente 3. Debes esperar que a tu correo electrónico llegue la respuesta 4. Desde el aplicativo activar la tarjeta",
+                "Cuidate, que tengas un lindo día"
+            ]
+        },
+        {
+            "user": "andrés",
+            "edad": "19",
+            "genero": "masculino",
+            "pregunta": [
+                "Mi nombre es Andrés",
+                "Necesito ayuda",
+                "Cuarta opción",
+                "Tipos de pagos",
+                "Gracias"
+            ],
+            "respuesta": [
+                "¡Gracias por comunicarte con UBank! ¿Cómo te ayudamos?",
+                "Claro que sí, por favor escoge una categoría que creas que es a fin a tu necesidad: 1. Cuenta de ahorros 2. Tarjeta de crédito 3. Pagos",
+                "Por supuesto, conozcamos las más sobre los pagos dime ¿que necesitas saber?",
+                "A grandes rasgos se tienen dos métodos de pago muy conocidos: *Pago en efectivo *Pago a crédito",
+                "Fue un gusto ayudarte, que tengas un buen día",
+                "Hasta pronto, UBank siempre contigo"
+            ]
+        },
+        {
+            "user": "anderson",
+            "edad": "26",
+            "genero": "masculino",
+            "pregunta": [
+                "Mi nombre es Anderson",
+                "¿Qué opciones tienes?",
+                "1",
+                "¿Qué es una cuenta de ahorros?",
+                "¿Cómo obtengo una cuenta de ahorros?",
+                "Hasta la próxima"
+            ],
+            "respuesta": [
+                "¡Gracias por comunicarte con UBank! ¿Cómo te ayudamos?",
+                "Por supuesto, cuentame a que categoría se asocia tu necesidad (escoge solo una): 1. Cuenta de ahorros 2. Tarjeta de crédito 3. Pagos",
+                "Las Cuentas de Ahorro son un tipo de ahorro orientado quienes tienen la capacidad de juntar dinero en forma periódica, ya que pueden abrirse y mantenerse con bajos montos.",
+                "Accede a la página web de UBank o descarga su aplicativo y sigue los siguientes pasos: 1. Selecciona Cuenta de ahorros en línea en el menú 2. Escoge tu oficina de gestión 3. Anexa todos los datos y documentos correspondiente 4. Confirma el correo eléctronico y el lugar donde será entregada tu tarjeta débito",
+                "Nos hablamos en una próxima ocasión"
+            ]
+        },
+        {
+            "user": "melissa",
+            "edad": "50",
+            "genero": "femenino",
+            "pregunta": [
+                "Mi nombre es Melissa",
+                "Necesito información",
+                "Cuenta de ahorros",
+                "¿Qué es una cuenta de ahorros?",
+                "¿Qué beneficios tiene la cuenta de ahorros?",
+                "Muestrame las opciones",
+                "Tarjeta de crédito",
+                "Beneficios de tarjeta de crédito",
+                "Tipos de tarjeta de crédito",
+                "Hasta luego"
+            ],
+            "respuesta": [
+                "Hola soy tu asistente virtual de UBank",
+                "Para ayudarte, necesito que me ayudes a conocer un poco más, escoge alguna de las siguientes opciones: 1. Cuenta de ahorros 2. Tarjeta de crédito 3. Pagos",
+                "Por supuesto, conozcamos más sobre las cuentas de ahorros, dime ¿que necesitas saber?",
+                "Una cuenta de ahorros es un producto financiero ofrecido por el Banco que te permite ahorrar tu dinero de forma segura. Tradicionalmente, la cuenta de ahorros es el producto más usado para que puedas ahorrar y disponer de tu dinero de forma rápida",
+                "Recuerda que algunos beneficios son: *Acceso inmediato a tu dinero *Cultivar el hábito del ahorro *Ganar intereses *No es necesario tener un monto elevado",
+                "Claro que sí, por favor escoge una categoría que creas que es a fin a tu necesidad: 1. Cuenta de ahorros 2. Tarjeta de crédito 3. Pagos",
+                "Por supuesto, conozcamos las tarjetas de crédito, dime ¿que necesitas saber?",
+                "Algunos de los beneficios que tiene al adquirir la tarjeta de crédito son: *Mejora tu historial crediticio *Compras por internet *Más seguridad *Controlar mejor tus gastos",
+                "UBank maneja dos tipos detarjetas: - Tarjeta Econo y - Tarjeta gold. Ambas manejan un interés del 2.5%,mientras que la cuota demanejo difiere en ambas, la primera con $10.500 y la segunda con $22.500",
+                "Adiós, espero haber sido de ayuda, cuidate"
+            ]
+        },
+        {
+            "user": "luisa",
+            "edad": "43",
+            "genero": "femenino",
+            "pregunta": [
+                "Mi nombre es Luisa",
+                "Necesito información",
+                "Pagos",
+                "¿Qué es pagos?",
+                "¿Como se puede pagar?",
+                "Muestrame las opciones",
+                "Tarjeta de crédito",
+                "Tipos de tarjeta de crédito",
+                "Nos vemos"
+            ],
+            "respuesta": [
+                "Bienvenido al soporte en línea de UBank, ¿cómo te podemos ayudar?",
+                "Claro que sí, por favor escoge una categoría que creas que es a fin a tu necesidad: 1. Cuenta de ahorros 2. Tarjeta de crédito  3. Pagos",
+                "Oh! Pagos, como puedo ayudarte en esta categoría?",
+                "Existen diferentes medios de pago para ajustarse a tus comodidades: *Efectivo *Cheques *Tarjeta débito *Tarjeta crédito *Pagos móviles *Transferencias",
+                "Claro que sí, por favor escoge una categoría que creas que es a fin a tu necesidad: 1. Cuenta de ahorros 2. Tarjeta de crédito 3. Pagos",
+                "Por supuesto, conozcamos las tarjetas de crédito, dime ¿que necesitas saber?",
+                "UBank maneja dos tipos detarjetas: - Tarjeta Econo y - Tarjeta gold. Ambas manejan un interés del 2.5%,mientras que la cuota demanejo difiere en ambas, la primera con $10.500 y la segunda con $22.500",
+                "Gracias por utiliza nuestros soporte de UBank, chau"
+            ]
+        },
+        {
+            "user": "mario",
+            "edad": "53",
+            "genero": "masculino",
+            "pregunta": [
+                "Mi nombre es Mario",
+                "Dame las opciones",
+                "Cuenta de ahorros",
+                "Como obtener cuenta de ahorros",
+                "Ahora, pagos",
+                "Explicame que es un pago",
+                "Medios de pagos existentes",
+                "Chao"
+            ],
+            "respuesta": [
+                "¡Hola!, ¿cómo podemos ayudarte?",
+                "Por supuesto, cuentame a que categoría se asocia tu necesidad (escoge solo una): 1. Cuenta de ahorros 2. Tarjeta de crédito 3. Pagos",
+                "Comprendo, nos enfocaremos en la cuenta de ahorros, ahora dime ¿en que te puedo ayudar?",
+                "Accede a la página web de UBank o descarga su aplicativo y sigue los siguientes pasos: 1. Selecciona Cuenta de ahorros en línea en el menú 2. Escoge tu oficina de gestión 3. Anexa todos los datos y documentos correspondiente 4. Confirma el correo eléctronico y el lugar donde será entregada tu tarjeta débito",
+                "Por supuesto, conozcamos más sobre los pagos dime ¿que necesitas saber?",
+                "Se basa en la entrega de un bien, servicio o activo financiero a cambio de otro bien, servicio o activo financiero",
+                "Recuerda que para pagar hay diferentes modalidades como: *Tarjetas *Transferencias *Efectivo *Pagos móviles",
+                "Hasta luego, fue un placer ayudarte!"
+            ]
+        },
+        {
+            "user": "cristina",
+            "edad": "30",
+            "genero": "femenino",
+            "pregunta": [
+                "Mi nombre es Cristina",
+                "Necesito ayuda",
+                "2",
+                "Beneficios de tarjeta de crédito",
+                "Tipos de tarjeta de crédito",
+                "Conseguir una tarjeta de crédito",
+                "Gracias"
+            ],
+            "respuesta": [
+                "Hola soy tu asistente virtual de UBank",
+                "Para ayudarte, necesito que me ayudes a conocer un poco más, escoge alguna de las siguientes opciones: 1. Cuenta de ahorros 2. Tarjeta de crédito 3. Pagos",
+                "Oh! Tarjetas Crédito, como puedo ayudarte en esta categoría?",
+                "Al adquirir la tarjeta de crédito tiene beneficios como: *Emitir cheques *Descuentos y promociones *Mejora tu historial crediticio *Controlar mejor tus gastos *Más seguridad",
+                "UBank maneja dos tipos detarjetas:- Tarjeta Econo y - Tarjeta gold. Ambas manejan un interés del 2.5%,mientras que la cuota demanejo difiere en ambas, la primera con $10.500 y la segunda con $22.500",
+                "Accede a la página web de UBank o descarga su aplicativo y sigue los siguientes pasos: 1. Selecciona Tarjeta de Crédito en línea en el menú 2. Anexa todos los datos y documentos correspondiente 3. Debes esperar que a tu correo electrónico llegue la respuesta 4. Desde el aplicativo activar la tarjeta",
+                "Espero haber ser de utilidad, nos hablamos en una próxima ocasión"
+            ]
+        },
+        {
+            "user": "tatiana",
+            "edad": "27",
+            "genero": "femenino",
+            "pregunta": [
+                "Hola mi nombre es Tatiana",
+                "Opciones",
+                "1",
+                "Beneficios de cuenta",
+                "Beneficios de cuenta",
+                "Beneficiio de ahorros",
+                "adiós"
+            ],
+            "respuesta": [
+                "¡Gracias por comunicarte con UBank!  ¿Cómo te ayudamos?",
+                "Por supuesto, cuentame a que  categoría se asocia tu necesidad  (escoge solo una):  1. Cuenta de ahorros  2. Tarjeta de crédito  3. Pagos",
+                "Oh! Cuenta de ahorros, como puedo  ayudarte en esta categoría?",
+                "Oh! Tarjetas Crédito, como  puedo ayudarte en esta  categoría?",
+                "Oh! Tarjetas Crédito, como  puedo ayudarte en esta  categoría?",
+                "Una cuenta de ahorros es un producto  financiero ofrecido por el Banco que te  permite ahorrar tu dinero de forma  segura. Tradicionalmente, la cuenta de  ahorros es el producto más usado  para que puedas ahorrar y disponer de  tu dinero de forma rápida",
+                "Para ayudarte, necesito que me  ayudes a conocer un poco más,  escoge alguna de las siguientes  opciones:  1. Cuenta de ahorros  2. Tarjeta de crédito  3. Pagos"
+            ]
+        },
+        {
+            "user": "tatiana",
+            "edad": "20",
+            "genero": "femenino",
+            "pregunta": [
+                "Mi nombre es Tatiana",
+                "Mi edad es 20",
+                "Mi género es femenino",
+                "chao"
+            ],
+            "respuesta": [
+                "¡Hola!, ¿cómo podemos ayudarte?",
+                "¡Hola!, ¿cómo podemos ayudarte?",
+                "¡Gracias por comunicarte con UBank!  ¿Cómo te ayudamos?",
+                "¡Hasta la próxima!"
+            ]
+        },
+        {
+            "user": "tatiana",
+            "edad": "20",
+            "genero": "femenino",
+            "pregunta": [
+                "Hola mi nombre es Tatiana",
+                "Mi edad es 20",
+                "Mi género es femenino",
+                "Chao"
+            ],
+            "respuesta": [
+                "¡Hola!, ¿cómo podemos ayudarte?",
+                "Claro que sí, por favor escoge  una categoría que creas que es  a fin a tu necesidad:  1. Cuenta de ahorros  2. Tarjeta de crédito  3. Pagos",
+                "Para ayudarte, necesito que me  ayudes a conocer un poco más,  escoge alguna de las siguientes  opciones:  1. Cuenta de ahorros  2. Tarjeta de crédito  3. Pagos",
+                "Hasta luego, fue un placer ayudarte!"
             ]
         }
     ]

@@ -23,7 +23,7 @@
     {
       "tag": "opciones-principales",
       "posibles-preguntas":  ["ayuda", "Opciones", "información"],
-      "posibles-respuesta": ["Claro que sí, por favor escoge\n              una categoría que creas que es\n             a fin a tu necesidad:\n             1. Cuenta de ahorros\n              2. Tarjeta de crédito\n              3. Pagos\n",
+      "posibles-respuesta": ["Claro que sí, por favor escoge\n              una categoría que creas que es\n              a fin a tu necesidad:\n              1. Cuenta de ahorros\n              2. Tarjeta de crédito\n              3. Pagos\n",
                              "Estoy para ayudarte, pero necesito \n              conocer un poco más,escoge\n              la opción más\n              adecuada para ti:\n              1. Cuenta de ahorros\n              2. Tarjeta de crédito\n              3. Pagos\n",
                              "Por supuesto, cuentame a que\n              categoría se asocia tu necesidad\n              (escoge solo una):\n              1. Cuenta de ahorros\n              2. Tarjeta de crédito\n              3. Pagos\n",
                              "Para ayudarte, necesito que me\n              ayudes a conocer un poco más,\n              escoge alguna de las siguientes\n              opciones:\n              1. Cuenta de ahorros\n              2. Tarjeta de crédito\n              3. Pagos\n"]
@@ -56,8 +56,16 @@
       "posibles-preguntas":  ["beneficios cuenta ahorros", "pros cuenta de ahorros"],
       "posibles-respuesta": ["Algunos de los beneficios que tiene\n              al adquirir la cuenta de\n              ahorros son:\n              *Ganar intereses\n              *Acceso inmediato a tu dinero\n              *No es necesario tener un monto elevado\n              *Cultivar el hábito del ahorro",
                              "Recuerda que algunos beneficios\n               son:\n              *Acceso inmediato a tu dinero\n              *Cultivar el hábito del ahorro\n              *Ganar intereses\n              *No es necesario tener un monto elevado",
-                             "Al adquirir la cuenta de\n              ahorros tiene beneficios como:\n              *Ganar intereses\n             *Transferencia sin costos\n              *Crear hábitos de ahorro\n              *Tener dinero disponible"]
+                             "Al adquirir la cuenta de\n              ahorros tiene beneficios como:\n              *Ganar intereses\n              *Transferencia sin costos\n              *Crear hábitos de ahorro\n              *Tener dinero disponible"]
 
+    },
+
+    {
+      "tag": "tarjeta-credito",
+      "posibles-preguntas":  ["tarjeta crédito", "2", "segunda"],
+      "posibles-respuesta": ["Comprendo, nos enfocaremos en\n              las tarjetas de crédito,\n              ahora dime ¿en que\n              te puedo ayudar?",
+                             "Por supuesto, conozcamos las\n              tarjetas de crédito, dime\n              ¿que necesitas saber?",
+                             "Oh! Tarjetas Crédito, como\n              puedo ayudarte en esta\n              categoría?"]
     },
 
     {
@@ -73,7 +81,7 @@
       "posibles-preguntas":  ["beneficios tarjeta crédito", "ventajas tarjeta crédito", "pros tarjeta credito"],
       "posibles-respuesta": ["Algunos de los beneficios que\n              tiene al adquirir la tarjeta de\n              crédito son:\n              *Mejora tu historial crediticio\n              *Compras por internet\n              *Más seguridad\n              *Controlar mejor tus gastos",
                              "Recuerda que algunos beneficios\n              son:\n              *Utilizada por una o más personas\n              *Compras por internet\n              *Mejora tu historial crediticio\n              *Controlar mejor tus gastos\n              *Descuentos y promociones",
-                             "Al adquirir la cuenta corriente\n              tiene beneficios como:\n              *Emitir cheques\n              *Descuentos y promociones\n              *Mejora tu historial crediticio\n              *Controlar mejor tus gastos\n              *Más seguridad"]
+                             "Al adquirir la tarje de crédito\n              tiene beneficios como:\n              *Emitir cheques\n              *Descuentos y promociones\n              *Mejora tu historial crediticio\n              *Controlar mejor tus gastos\n              *Más seguridad"]
     },
 
     {
@@ -90,9 +98,9 @@
 
     {
       "tag": "pagos",
-      "posibles-preguntas":  ["pago", "4", "cuarta"],
+      "posibles-preguntas":  ["pago", "3", "tercera"],
       "posibles-respuesta": ["Comprendo, nos enfocaremos en\n              los pagos, ahora dime ¿en\n              que te puedo ayudar?",
-                             "Por supuesto, conozcamos las\n              más sobre los pagos dime\n              ¿que necesitas saber?",
+                             "Por supuesto, conozcamos\n              más sobre los pagos dime\n              ¿que necesitas saber?",
                              "Oh! Pagos, como puedo ayudarte\n              en esta categoría?"]
     },
 
